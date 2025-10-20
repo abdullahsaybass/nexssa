@@ -1,0 +1,132 @@
+.product-page {
+  font-family: "Inter", sans-serif;
+  color: #1e1e1e;
+  background-color: #f5f7fa;
+  padding: 40px 20px;
+}
+
+/* ---------- Header ---------- */
+.product-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-header h1 {
+  font-size: 2rem;
+  color: #0b3c8c;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.product-header h1 span {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.product-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ---------- Inquiry Card ---------- */
+.inquiry-card {
+  background: #ffffff;
+  max-width: 500px;
+  margin: 0 auto 50px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.inquiry-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inquiry-card span {
+  color: #007bff;
+}
+
+.inquiry-form input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f1f4f9;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.inquiry-form input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.inquiry-form input[readonly] {
+  background-color: #e9edf2;
+  cursor: not-allowed;
+  color: #555;
+}
+
+.inquiry-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #007bff, #005ecb);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.inquiry-form button:hover {
+  transform: scale(1.02);
+}
+
+/* ---------- Info Sections ---------- */
+.product-info {
+  background: white;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.product-info h2 {
+  color: #0b3c8c;
+  font-size: 1.4rem;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.product-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .product-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .inquiry-card {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .product-info {
+    width: 95%;
+    padding: 20px;
+  }
+}
