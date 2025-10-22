@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaCar, FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
@@ -36,11 +37,12 @@ export default function Header() {
             </div>
 
             <nav className="nav-links">
-              <a href="#">Home</a>
-              <a href="#">Shop Parts</a>
-              <a href="#">Car Accessories</a>
-              <a href="#">Truck Parts</a>
-              <a href="#">Services</a>
+              <Link to="/">Home</Link>
+              <Link to="/order">Shop Parts</Link>
+              <Link to="/service">Car Accessories</Link>
+              <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/service">Services</Link>
             </nav>
           </div>
 
@@ -70,7 +72,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Right Icons / Info */}
+          {/* Right Info Buttons */}
           <div className="right-icons">
             <div className="info-btn">Quality Used Parts</div>
             <div className="info-btn">Request a Quote</div>
@@ -95,20 +97,21 @@ export default function Header() {
         </div>
 
         <ul className="mobile-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop Parts</a></li>
-          <li><a href="#">Car Accessories</a></li>
-          <li><a href="#">Truck Parts</a></li>
-          <li><a href="#">Services</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/">Shop Parts</Link></li>
+          <li><Link to="/service">Car Accessories</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/service">Services</Link></li>
         </ul>
 
+        {/* Contact Info in Mobile Menu */}
         <div className="mobile-footer">
-          <p>Call us at:</p>
-          <strong>(800) 060-0730</strong>
-          <p>Email: info@nexxaauto.com</p>
+          <p><strong>Call us:</strong> (800) 060-0730</p>
+          <p><strong>Email:</strong> info@nexxaauto.com</p>
           <p>
-            Head Office: Nexxa Auto Parts, 550 Congressional Blvd, Suite 350,
-            Carmel, IN 46032
+            <strong>Office:</strong> Nexxa Auto Parts,
+            550 Congressional Blvd, Suite 350, Carmel, IN 46032
           </p>
         </div>
       </div>

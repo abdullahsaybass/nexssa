@@ -1,4 +1,4 @@
-.product-page {
+.pd-page {
   font-family: "Inter", sans-serif;
   color: #1e1e1e;
   background-color: #f5f7fa;
@@ -6,30 +6,30 @@
 }
 
 /* ---------- Header ---------- */
-.product-header {
+.pd-header {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.product-header h1 {
+.pd-header h1 {
   font-size: 2rem;
   color: #0b3c8c;
   line-height: 1.4;
   margin-bottom: 10px;
 }
 
-.product-header h1 span {
+.pd-header h1 span {
   color: #007bff;
   font-weight: 700;
 }
 
-.product-header p {
+.pd-header p {
   font-size: 1.1rem;
   color: #555;
 }
 
 /* ---------- Inquiry Card ---------- */
-.inquiry-card {
+.pd-inquiry-card {
   background: #ffffff;
   max-width: 500px;
   margin: 0 auto 50px;
@@ -39,18 +39,18 @@
   text-align: center;
 }
 
-.inquiry-card h3 {
+.pd-inquiry-card h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 20px;
   color: #333;
 }
 
-.inquiry-card span {
+.pd-inquiry-card span {
   color: #007bff;
 }
 
-.inquiry-form input {
+.pd-inquiry-form input {
   width: 100%;
   margin-bottom: 12px;
   padding: 12px;
@@ -62,18 +62,18 @@
   transition: border 0.2s;
 }
 
-.inquiry-form input:focus {
+.pd-inquiry-form input:focus {
   border-color: #007bff;
   background-color: #fff;
 }
 
-.inquiry-form input[readonly] {
+.pd-inquiry-form input[readonly] {
   background-color: #e9edf2;
   cursor: not-allowed;
   color: #555;
 }
 
-.inquiry-form button {
+.pd-inquiry-form button {
   width: 100%;
   padding: 14px;
   background: linear-gradient(90deg, #007bff, #005ecb);
@@ -86,12 +86,23 @@
   transition: transform 0.2s ease;
 }
 
-.inquiry-form button:hover {
+.pd-inquiry-form button:hover {
   transform: scale(1.02);
 }
 
+/* ---------- Success Message ---------- */
+.pd-success-message {
+  font-size: 1rem;
+  color: green;
+  font-weight: 600;
+  padding: 20px;
+  border: 1px solid #d4edda;
+  border-radius: 8px;
+  background-color: #f0fff0;
+}
+
 /* ---------- Info Sections ---------- */
-.product-info {
+.pd-product-info {
   background: white;
   max-width: 900px;
   margin: 20px auto;
@@ -100,7 +111,7 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.product-info h2 {
+.pd-product-info h2 {
   color: #0b3c8c;
   font-size: 1.4rem;
   border-left: 4px solid #007bff;
@@ -108,7 +119,7 @@
   margin-bottom: 15px;
 }
 
-.product-info p {
+.pd-product-info p {
   font-size: 1rem;
   line-height: 1.6;
   color: #444;
@@ -116,16 +127,16 @@
 
 /* ---------- Responsive ---------- */
 @media (max-width: 600px) {
-  .product-header h1 {
+  .pd-header h1 {
     font-size: 1.5rem;
   }
 
-  .inquiry-card {
+  .pd-inquiry-card {
     padding: 20px;
     width: 90%;
   }
 
-  .product-info {
+  .pd-product-info {
     width: 95%;
     padding: 20px;
   }

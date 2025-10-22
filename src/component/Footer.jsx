@@ -1,66 +1,88 @@
 "use client";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Contact Us */}
+        {/* === Contact Us === */}
         <div>
           <h3 className="footer-title">Contact Us</h3>
           <p className="footer-text">
-            We specialize in vintage and classic car parts for restoration
-            enthusiasts. Get in touch for genuine, high-quality components.
+            We specialize in high-quality used and refurbished auto parts for
+            cars, trucks, and motorcycles. Contact us for reliable parts and
+            expert service.
           </p>
 
           <div className="footer-info">
             <p>
-              <span className="footer-label">PHONE NUMBER:</span> +1 (555) 123-4567
+              <span className="footer-label">COMPANY:</span> Nexxa Auto Parts
             </p>
             <p>
-              <span className="footer-label">EMAIL ADDRESS:</span> info@classicpartsco.com
+              <span className="footer-label">ADDRESS:</span> 550 Congressional Blvd, Suite 350, Carmel, IN 46032
             </p>
             <p>
-              <span className="footer-label">OUR LOCATION:</span> 42 Vintage Lane, Detroit, MI 48201
+              <span className="footer-label">PHONE:</span> +1 (888) 266-0007
             </p>
             <p>
-              <span className="footer-label">WORKING HOURS:</span> Mon–Sat: 9am - 6pm
+              <span className="footer-label">EMAIL:</span> info@nexxaauto.com
             </p>
           </div>
         </div>
 
-        {/* Information */}
+        {/* === Information === */}
         <div>
           <h3 className="footer-title">Information</h3>
           <ul className="footer-list">
-            <li><a href="#">About Classic Parts Co.</a></li>
-            <li><a href="#">Delivery Information</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contact Support</a></li>
-            <li><a href="#">Returns & Refunds</a></li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/privacypolicy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/termsandcondtion">Terms & Conditions</Link>
+            </li>
+            <li>
+              <Link to="/warranty">Warranty Policy</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Support</Link>
+            </li>
           </ul>
         </div>
 
-        {/* Categories */}
+        {/* === Categories === */}
         <div>
           <h3 className="footer-title">Product Categories</h3>
           <ul className="footer-list">
-            <li><a href="#">Vintage Engine Parts</a></li>
-            <li><a href="#">Chrome Accessories</a></li>
-            <li><a href="#">Classic Interiors</a></li>
-            <li><a href="#">Restored Wheels</a></li>
-            <li><a href="#">Suspension & Brakes</a></li>
+            <li>
+              <Link to="/contact">Engine Parts</Link>
+            </li>
+            <li>
+              <Link to="/contact">Chrome Accessories</Link>
+            </li>
+            <li>
+              <Link to="/contact">Classic Interiors</Link>
+            </li>
+            <li>
+              <Link to="/contact">Restored Wheels</Link>
+            </li>
+            <li>
+              <Link to="/contact">Suspension & Brakes</Link>
+            </li>
           </ul>
         </div>
 
-        {/* Newsletter */}
+        {/* === Newsletter === */}
         <div>
           <h3 className="footer-title">Newsletter</h3>
           <p className="footer-text">
-            Subscribe to get updates on rare vintage parts, restock alerts, and
-            restoration tips.
+            Subscribe for updates on new arrivals, restocks, and exclusive
+            offers from Nexxa Auto Parts.
           </p>
           <form className="footer-form">
             <input
@@ -68,7 +90,9 @@ export default function Footer() {
               placeholder="Email Address..."
               className="footer-input"
             />
-            <button type="submit" className="footer-btn">Subscribe</button>
+            <button type="submit" className="footer-btn">
+              Subscribe
+            </button>
           </form>
           <div className="footer-socials">
             <a href="#"><FaFacebookF /></a>
@@ -79,11 +103,10 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom footer */}
+      {/* === Bottom footer === */}
       <div className="footer-bottom">
         <p>
-          Powered by <span className="footer-highlight">React & Tailwind</span> — 
-          Designed by <span className="footer-highlight">Classic Parts Co.</span>
+          © {new Date().getFullYear()} <span className="footer-highlight">Nexxa Auto Parts</span>. All rights reserved.
         </p>
       </div>
     </footer>

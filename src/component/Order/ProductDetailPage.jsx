@@ -54,25 +54,25 @@ export default function ProductDetailPage() {
   };
 
   return (
-    <div className="product-page">
-      <section className="product-header">
+    <div className="pd-page">
+      <section className="pd-header">
         <h1>
           Find Quality Used <span>{part}</span> For {year} {make} {model}
         </h1>
         <p>Connect instantly with trusted recyclers and certified suppliers.</p>
       </section>
 
-      <section className="inquiry-card">
+      <section className="pd-inquiry-card">
         <h3>
           Currently Available: <span>{stock}</span> in stock
         </h3>
 
         {submitted ? (
-          <div className="success-message">
+          <div className="pd-success-message">
             🎉 Thank you for your inquiry! Our team will contact you shortly.
           </div>
         ) : (
-          <form className="inquiry-form" onSubmit={handleSubmit}>
+          <form className="pd-inquiry-form" onSubmit={handleSubmit}>
             <input type="text" value={year} readOnly />
             <input type="text" value={make} readOnly />
             <input type="text" value={model} readOnly />
@@ -109,7 +109,7 @@ export default function ProductDetailPage() {
         )}
       </section>
 
-      <section className="product-info">
+      <section className="pd-product-info">
         <h2>Product Overview</h2>
         <p>
           Get high-quality OEM replacement parts for your vehicle from our
